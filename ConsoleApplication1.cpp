@@ -1,16 +1,14 @@
 #include <iostream>
 
-
-
 int main() {
-	float a, d, n;
-	std::cout << "Input value of a\n";
-	std::cin >> a;
-	std::cout << "Input value of d\n";
-	std::cin >> d;
-	std::cout << "Input value of n\n";
-	std::cin >> n;
-	float sum = (((2 * a) + (d * (n - 1))) / 2) * n;
+	float firstTermInTheSequence, commonDifferenceBetweenTerms, step;
+	std::cout << "Input value of the first term in the sequence\n";
+	std::cin >> firstTermInTheSequence;
+	std::cout << "Input value of the common difference between terms \n";
+	std::cin >> commonDifferenceBetweenTerms;
+	std::cout << "Input value of step\n";
+	std::cin >> step;
+	float sum = (((2 * firstTermInTheSequence) + (commonDifferenceBetweenTerms * (step - 1))) / 2) * step;
 	std::cout << sum;
 	return 0;
 }
