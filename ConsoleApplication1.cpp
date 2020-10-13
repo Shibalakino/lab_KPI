@@ -1,12 +1,16 @@
-﻿#include <iostream>
-void sum(float a, float d, float n) {
-	std::cout << n * (2 * a + (n - 1) * d) / 2;
+#include <iostream>
 
-}
+
+
 int main() {
 	float a, d, n;
-	std::cout << "Enter values of 'a', 'd', and 'n' for sum of arithmetic progression through space \n" ;
-	std::cin >> a >> d >> n;
-	sum(a, d, n);
+	std::cout << "Input value of a\n";
+	std::cin >> a;
+	std::cout << "Input value of d\n";
+	std::cin >> d;
+	std::cout << "Input value of n\n";
+	std::cin >> n;
+	float sum = (((2 * a) + (d * (n - 1))) / 2) * n;
+	std::cout << sum;
 	return 0;
 }
