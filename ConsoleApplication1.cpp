@@ -2,7 +2,7 @@
 
 int main() {
 	setlocale(LC_ALL, "Ukr");
-	std::cout << "Бойко Олег ІС-01 \n";
+	std::cout << "Бойко Олег IС-01 \n";
 	float firstTermInTheSequence, commonDifferenceBetweenTerms, step;
 	std::cout << "Input value of the first term in the sequence\n";
 	std::cin >> firstTermInTheSequence;
